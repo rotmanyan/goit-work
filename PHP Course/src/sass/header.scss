@@ -18,3 +18,33 @@
     }
   }
 }
+
+
+@media (min-width: 480px) {
+  .contacts {
+    flex-basis: 56%;
+    display: flex;
+    justify-content: space-between;
+
+    &__email {
+      flex-basis: 40%;
+      align-self: center;
+    }
+
+    &__phones {
+      flex-basis: 60%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    flex-basis: 45%;
+  }
+}
+
+@media (min-width: 960px) {
+  .contacts {
+    flex-basis: 40%;
+  }
+}

@@ -519,6 +519,21 @@ a {
     line-height: 1.25rem;
   }
 
+  .contacts {
+    flex-basis: 56%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__email {
+    flex-basis: 40%;
+    align-self: center;
+  }
+
+  .contacts__phones {
+    flex-basis: 60%;
+  }
+
   .after {
     display: flex;
   }
@@ -591,6 +606,10 @@ a {
 
   .title--big {
     font-size: 1.87rem;
+  }
+
+  .contacts {
+    flex-basis: 45%;
   }
 
   .begin {
@@ -689,6 +708,10 @@ a {
   .comments {
     font-size: 1.05125rem;
     line-height: 1.5625rem;
+  }
+
+  .contacts {
+    flex-basis: 40%;
   }
 }
 
