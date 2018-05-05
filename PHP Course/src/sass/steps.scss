@@ -1,0 +1,163 @@
+.steps {
+
+}
+
+.begin {
+  padding: rem(30) 0;
+
+  &__title {
+    position: relative;
+    margin-bottom: rem(10);
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: rem(10);
+      height: rem(10);
+      background-color: $black;
+      top: rem(-10);
+      left: 0;
+    }
+  }
+
+  &__span {
+    display: block;
+  }
+
+  &__description {
+    padding: rem(30) 0 0 rem(20);
+
+  }
+}
+
+.request {
+  padding: rem(20) 0;
+
+  &__title {
+    margin-bottom: rem(16);
+  }
+
+  &__list {
+    padding: rem(10);
+  }
+
+  &__item {
+    font-size: rem(12);
+    position: relative;
+    counter-reset: none;
+    counter-increment: baloo;
+    //margin-left: rem(16);
+    margin: 0 0 rem(25) rem(16);
+    //height: rem(48);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before{
+      position: absolute;
+      display: block;
+      width: rem(33);
+      height: rem(11);
+      content: "[ 00" counter(baloo) " ]";
+      background-color: $orange;
+      font-family: $acrom;
+      font-size: rem(9);
+      font-weight: 700;
+      color: $white;
+      text-align: center;
+      top: rem(14);
+      left: -2rem;
+      line-height: 120%;
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+.after {
+
+  &__pic {
+    display: none;
+  }
+
+  &__list {
+    padding: rem(10);
+    margin: rem(16) 0 0 rem(10);
+  }
+
+  &__item {
+    margin: 0 0 rem(10) rem(10);
+    position: relative;
+
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: rem(10);
+      height: rem(10);
+      background-color: $orange;
+      top: 0;
+      left: rem(-21);
+    }
+  }
+}
+
+
+@media (min-width: 480px) {
+
+  .after {
+    display: flex;
+
+    &__pic {
+      flex-basis: 50%;
+      display: block;
+      //height: 100%;
+      //width: auto;
+    }
+
+    &__description {
+      flex-basis: 50%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .begin {
+    display: flex;
+    justify-content: space-between;
+
+    &__pic {
+      flex-basis: 50%;
+    }
+
+    &__description {
+      flex-basis: 40%;
+    }
+  }
+
+  .request {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__pic {
+      flex-basis: 45%;
+    }
+
+    &__description {
+      flex-basis: 50%;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      flex-basis: 40%;
+      font-size: rem(16);
+    }
+  }
+}

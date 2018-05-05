@@ -1,0 +1,84 @@
+.title {
+  font-family: $acrom;
+  font-size: rem(14);
+  font-weight: 900;
+  color: $black;
+  //text-transform: uppercase;
+
+  &--big {
+    font-size: rem(18);
+  }
+
+  &--white {
+    color: $white;
+    background-color: $black;
+  }
+}
+
+.global-title {
+  padding-top: rem(10);
+
+  &__title {
+    display: block;
+    margin-bottom: rem(4);
+  }
+}
+
+.main-title {
+  padding: rem(16) 0 ;
+
+  &__title {
+    display: inline;
+  }
+}
+
+@media (min-width: 480px) {
+  .title {
+    font-size: rem(18);
+
+    &--big {
+      font-size: rem(20);
+    }
+
+    &--white {
+      display: inline-block;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: rem(26.92);
+    &--big {
+      font-size: rem(29.92);
+    }
+  }
+
+}
+
+@media (min-width: 960px) {
+  .title {
+    font-size: rem(33.65);
+    &--big {
+      font-size: rem(60);
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: rem(30);
+    &--big {
+      font-size: rem(60);
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .title {
+    font-size: rem(36);
+    &--big {
+      font-size: rem(60);
+    }
+  }
+}
