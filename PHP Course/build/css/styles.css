@@ -670,11 +670,6 @@ a {
     margin-top: 1.875rem;
   }
 
-  .boxes__box:last-child {
-    -webkit-transform: translate(-135%, 0);
-    transform: translate(-135%, 0);
-  }
-
   .confirm {
     max-width: 30rem;
     margin: auto;
