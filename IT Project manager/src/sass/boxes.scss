@@ -1,3 +1,11 @@
+.main {
+  padding: rem(16) 0 ;
+
+  &__title {
+    display: inline;
+  }
+}
+
 .boxes {
   counter-reset: numb;
   font-family: $acrom;

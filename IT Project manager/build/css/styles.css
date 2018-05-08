@@ -176,14 +176,6 @@ a {
   margin-bottom: 0.25rem;
 }
 
-.main-title {
-  padding: 1rem 0;
-}
-
-.main-title__title {
-  display: inline;
-}
-
 .comments {
   font-family: "Acrom", sans-serif;
   font-weight: 900;
@@ -363,6 +355,14 @@ a {
   left: -1.3125rem;
 }
 
+.main {
+  padding: 1rem 0;
+}
+
+.main__title {
+  display: inline;
+}
+
 .boxes {
   counter-reset: numb;
   font-family: "Acrom", sans-serif;
@@ -401,7 +401,7 @@ a {
 }
 
 .stages {
-  padding: 1rem 0 3rem;
+  padding-bottom: 3rem;
 }
 
 .stages__title {
