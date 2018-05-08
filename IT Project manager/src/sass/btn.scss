@@ -1,0 +1,36 @@
+.btn {
+  display: block;
+  background-color: $orange;
+  font-size: rem(11);
+  font-family: $acrom;
+  font-weight: 900;
+  padding: rem(13) rem(22);
+  color: #ffff;
+  border: 1px solid $orange;
+  border-radius: rem(2);
+  text-transform: uppercase;
+}
+
+@media(min-width: 480px) {
+  .btn {
+    padding: rem(20) rem(33);
+  }
+}
+
+@media(min-width: 768px) {
+  .btn {
+    padding: rem(9) rem(14);
+  }
+}
+
+@media(min-width: 960px) {
+  .btn {
+    padding: rem(10) rem(16);
+  }
+}
+
+@media(min-width: 1440px) {
+  .btn {
+    padding: rem(10) rem(21);
+  }
+}

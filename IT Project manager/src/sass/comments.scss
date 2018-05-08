@@ -1,0 +1,36 @@
+.comments {
+  font-family: $acrom;
+  font-weight: 900;
+  font-size: rem(10);
+  line-height: rem(13);
+  color: $black;
+  text-transform: uppercase;
+}
+
+@media (min-width: 480px) {
+  .comments {
+    font-size: rem(13.5);
+    line-height: rem(20);
+  }
+}
+
+@media (min-width: 960px) {
+  .comments {
+    font-size: rem(16.82);
+    line-height: rem(25);
+  }
+}
+
+@media (min-width: 1200px) {
+  .comments {
+    font-size: rem(15);
+    line-height: rem(22);
+  }
+}
+
+@media (min-width: 1400px) {
+  .comments {
+    font-size: rem(18);
+    line-height: rem(27);
+  }
+}
